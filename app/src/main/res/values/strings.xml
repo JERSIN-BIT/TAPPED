@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tapped</string>
+    <string name="title_buttons">Buttons</string>
+    <string name="header_raised">Raised Button</string>
+    <string name="header_flat">Flat Button</string>
+    <string name="btn_normal">NORMAL</string>
+    <string name="btn_pressed">PRESSED</string>
+    <string name="btn_disabled">DISABLED</string>
+</resources>

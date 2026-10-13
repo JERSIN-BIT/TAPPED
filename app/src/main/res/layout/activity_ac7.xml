@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    tools:context=".AC7">
+
+    <!-- Barra superior / Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="RoomDemo"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Product ID Not assigned"
+        android:textColor="#5F6368"
+        android:textSize="14sp" />
+
+    <!-- Campos de entrada -->
+    <EditText
+        android:id="@+id/etProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="Product Name"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etProductQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Product Quantity"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <!-- Botones de Acción (ADD, DELETE, FIND) en una fila horizontal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="#00BFA5"
+            android:text="ADD"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="#00BFA5"
+            android:text="DELETE"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnFind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="#00BFA5"
+            android:text="FIND"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Simulación de lista inferior -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:text="Item 0" android:textSize="16sp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:text="Item 1" android:textSize="16sp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:text="Item 2" android:textSize="16sp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:text="Item 3" android:textSize="16sp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:text="Item 4" android:textSize="16sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

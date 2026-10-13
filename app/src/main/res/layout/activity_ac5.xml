@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF"
+    android:padding="24dp"
+    tools:context=".AC5">
+
+    <!-- Título Home -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="48dp"
+        android:text="Home"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <!-- Botón 1: Navigate to destination -->
+    <Button
+        android:id="@+id/btnNavigateDest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#00BFA5"
+        android:minHeight="48dp"
+        android:text="NAVIGATE TO DESTINATION"
+        android:textColor="@android:color/white" />
+
+    <!-- Botón 2: Navigate with action -->
+    <Button
+        android:id="@+id/btnNavigateAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00BFA5"
+        android:minHeight="48dp"
+        android:text="NAVIGATE WITH ACTION"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

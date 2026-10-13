@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F7FA"
+    tools:context=".AC3">
+
+    <!-- Barra superior verde -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#00BFA5"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_buttons"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Contenedor general en dos columnas (Raised vs Flat) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="24dp">
+
+        <!-- Columna Izquierda: Raised Buttons -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingEnd="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="@string/header_raised"
+                android:textColor="#5F6368"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Normal Raised Button -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#00BFA5"
+                android:text="@string/btn_normal"
+                android:textColor="@android:color/white" />
+
+            <!-- Pressed Raised Button -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#00897B"
+                android:text="@string/btn_pressed"
+                android:textColor="@android:color/white" />
+
+            <!-- Disabled Raised Button -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#80CBC4"
+                android:enabled="false"
+                android:text="@string/btn_disabled"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- Columna Derecha: Flat Buttons -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="12dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="@string/header_flat"
+                android:textColor="#5F6368"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Normal Flat Button -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/btn_normal"
+                android:textColor="#00BFA5" />
+
+            <!-- Pressed Flat Button -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/btn_pressed"
+                android:textColor="#00897B" />
+
+            <!-- Disabled Flat Button -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/btn_disabled"
+                android:textColor="#B0BEC5" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

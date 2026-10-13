@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Application de Boutons</string>
+    <string name="title_buttons">Boutons</string>
+    <string name="header_raised">Bouton Surélevé</string>
+    <string name="header_flat">Bouton Plat</string>
+    <string name="btn_normal">NORMAL</string>
+    <string name="btn_pressed">APPUYÉ</string>
+    <string name="btn_disabled">DÉSACTIVÉ</string>
+</resources>
